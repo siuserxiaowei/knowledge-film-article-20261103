@@ -1,0 +1,17 @@
+{
+  "version":1,
+  "ready":false,
+  "specHash":"",
+  "title":"请先准备文稿与时间轴",
+  "fps":30,
+  "width":1920,
+  "height":1080,
+  "durationSeconds":3,
+  "durationInFrames":90,
+  "audioSrc":null,
+  "narrated":false,
+  "provenance":{"status":"unprepared"},
+  "theme":{"background":"#090705","foreground":"#EEE8D8","accent":"#C9AD68","danger":"#C56052"},
+  "scenes":[],
+  "captions":[]
+}

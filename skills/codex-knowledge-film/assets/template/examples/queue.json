@@ -1,0 +1,27 @@
+{
+  "version":1,
+  "id":"queue-example",
+  "title":"排队为什么越挤越慢",
+  "fps":30,
+  "width":1920,
+  "height":1080,
+  "theme":{"background":"#090705","foreground":"#EEE8D8","accent":"#C9AD68","danger":"#C56052"},
+  "audio":{"mode":"silent","backend":"hf-space","model":"Ming-3.0-tts-0.5B","voice":"灵小锋","seed":1895,"cfg":2,"sigma":0.25,"music":true},
+  "pacing":{"leadSeconds":0.3,"tailSeconds":0.45,"sceneGapSeconds":0.3},
+  "sourceNote":"生活机制示意：人数、通道尺寸与速度仅用于讲解，不是对具体场所的实测数据。",
+  "scenes":[
+    {"id":"queue-hook","kind":"queue","title":"每个人，都想快一点","visual":{"mode":"crowded","count":8,"labels":["等候的人","宽度没有改变"]},"lines":[
+      {"id":"queue-01","text":"每个人都想快一点出去。","silentSeconds":3.3},
+      {"id":"queue-02","text":"可出口，仍然只有这么宽。","silentSeconds":3.5}
+    ]},
+    {"id":"queue-block","kind":"queue","title":"拥挤，会占住通道","visual":{"mode":"blocked","count":10,"labels":["想往前挤","通道被占住"]},"lines":[
+      {"id":"queue-03","text":"大家挤向同一个地方，门口就容易堵住。","silentSeconds":4},
+      {"id":"queue-04","text":"个人加速，可能变成彼此阻挡。","silentSeconds":3.6}
+    ]},
+    {"id":"queue-order","kind":"queue","title":"把通道留出来","visual":{"mode":"ordered","count":8,"labels":["依次前进","保持畅通"]},"lines":[
+      {"id":"queue-05","text":"退回一条队伍，让通道保持畅通。","silentSeconds":3.8},
+      {"id":"queue-06","text":"秩序，也是一种共同节省时间的方法。","silentSeconds":4}
+    ]},
+    {"id":"queue-close","kind":"title","title":"给别人留路，也给自己留路","visual":{"eyebrow":"一个出口 · 一起通过","note":"生活机制示意"},"lines":[],"durationSeconds":3}
+  ]
+}

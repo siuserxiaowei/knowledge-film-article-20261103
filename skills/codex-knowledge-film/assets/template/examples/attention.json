@@ -1,0 +1,27 @@
+{
+  "version":1,
+  "id":"attention-example",
+  "title":"注意力也有一本账",
+  "fps":30,
+  "width":1920,
+  "height":1080,
+  "theme":{"background":"#071314","foreground":"#E8F0E8","accent":"#A6C5A2","danger":"#D28D70"},
+  "audio":{"mode":"silent","backend":"hf-space","model":"Ming-3.0-tts-0.5B","voice":"灵小锋","seed":1895,"cfg":2,"sigma":0.25,"music":true},
+  "pacing":{"leadSeconds":0.3,"tailSeconds":0.45,"sceneGapSeconds":0.3},
+  "sourceNote":"注意力预算是讲解类比；屏上的资源刻度是示意，不是认知能力的实验测量。",
+  "scenes":[
+    {"id":"attention-hook","kind":"budget","title":"打开书，也打开手机","visual":{"mode":"scattered","labels":["想读的书","不断亮起的手机"],"values":[75,25]},"lines":[
+      {"id":"attention-01","text":"本来想读几页书，手机却又亮了。","silentSeconds":3.8},
+      {"id":"attention-02","text":"一会儿看这里，一会儿看那里。","silentSeconds":3.6}
+    ]},
+    {"id":"attention-cost","kind":"budget","title":"切换，也会占用时间","visual":{"mode":"switching","labels":["读到哪里了","再回一条消息"],"values":[45,55]},"lines":[
+      {"id":"attention-03","text":"每次回来，都得重新找到刚才读到的地方。","silentSeconds":4.2},
+      {"id":"attention-04","text":"时间过去了，书页却没翻过几张。","silentSeconds":3.8}
+    ]},
+    {"id":"attention-focus","kind":"budget","title":"给这一件事留一段完整时间","visual":{"mode":"focused","labels":["继续读下去","通知稍后再看"],"values":[90,10]},"lines":[
+      {"id":"attention-05","text":"先把通知放到一边，只做眼前这一件事。","silentSeconds":4},
+      {"id":"attention-06","text":"让注意力，陪这几页书走完。","silentSeconds":3.5}
+    ]},
+    {"id":"attention-close","kind":"title","title":"注意力，值得有意识地分配","visual":{"eyebrow":"留出完整的一段时间","note":"资源刻度为讲解示意"},"lines":[],"durationSeconds":3}
+  ]
+}

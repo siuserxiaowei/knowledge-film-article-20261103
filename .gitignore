@@ -1,0 +1,13 @@
+# Large media & zip binaries
+*.mp4
+*.zip
+feishu-delivery-20261103/*.mp4
+feishu-delivery-20261103/*.zip
+.env
+.env.*
+!.env.example
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

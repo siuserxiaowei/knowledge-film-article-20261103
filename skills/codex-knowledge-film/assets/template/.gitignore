@@ -1,0 +1,11 @@
+node_modules/
+.venv*/
+.cache/
+.env
+__pycache__/
+*.pyc
+*.pending*
+out/
+public/audio/
+content/build-report.json
+content/sample-build-report.json

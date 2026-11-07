@@ -1,0 +1,30 @@
+{
+  "name": "codex-knowledge-film-project",
+  "version": "1.1.0",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "scripts": {
+    "prepare:film": "python3 tools/prepare_film.py",
+    "prepare:check": "python3 tools/prepare_film.py --dry-run",
+    "studio": "remotion studio --no-open",
+    "check": "node tools/check-film.mjs && tsc",
+    "test": "python3 -m unittest discover -s tools -p 'test_*.py'",
+    "render": "node tools/check-film.mjs && remotion render src/index.ts KnowledgeFilm out/film.mp4 --codec=h264 --crf=18 --concurrency=3 --chrome-mode=headless-shell --disable-shared-memory-capture"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.540",
+    "@remotion/fonts": "4.0.540",
+    "@remotion/media": "4.0.540",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.540"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/web": "0.0.166",
+    "typescript": "5.9.3"
+  }
+}

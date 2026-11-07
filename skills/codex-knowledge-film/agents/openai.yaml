@@ -1,0 +1,4 @@
+interface:
+  display_name: "知识短片工坊"
+  short_description: "用 Codex、Remotion 与 Ming 制作有分镜、配音和验证的知识短片"
+  default_prompt: "使用 $codex-knowledge-film，把我的题目或参考视频做成带分镜、Remotion 动画、Ming 配音和验证记录的知识短片。"

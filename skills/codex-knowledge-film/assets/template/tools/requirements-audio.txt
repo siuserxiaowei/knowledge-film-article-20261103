@@ -1,0 +1,2 @@
+# The preparation pipeline uses Python's standard library plus system FFmpeg/FFprobe.
+# No pip packages are required. Optional ASR needs its own separately managed environment.
