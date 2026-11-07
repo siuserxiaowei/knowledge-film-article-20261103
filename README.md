@@ -4,7 +4,7 @@
 
 **先读 [完整文章](article-codex-draft.md)，或直接下载 [工程与有声样片](https://github.com/siuserxiaowei/knowledge-film-article-20261103/releases/tag/v2026.11.07)。**
 
-![两条知识短片的制作案例](images/xiaowei-vibe-cover-16x9.jpg)
+![把知识点做成动画：代码画面＋百灵配音｜实战流程；紫色手绘胶片封面](images/knowledge-film-lavender-cover.png)
 
 ## 这里有什么
 
